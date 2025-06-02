@@ -1,0 +1,6 @@
+com\example\todolist\controller\TodoController.class
+com\example\todolist\models\Todo.class
+com\example\todolist\controller\GlobalExceptionHandler.class
+com\example\todolist\TodolistApplication.class
+com\example\todolist\services\TodoService.class
+com\example\todolist\repository\TodoRepository.class

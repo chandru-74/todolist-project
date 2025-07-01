@@ -3,6 +3,6 @@ services:
     name: todolist-app
     buildCommand: "./mvnw clean install"
     startCommand: "java -jar target/*.jar"
-    plan: free
     branch: main
+    plan: free
     autoDeploy: true

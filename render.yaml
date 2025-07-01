@@ -6,3 +6,6 @@ services:
     buildCommand: "./mvnw clean install"
     startCommand: "java -jar target/*.jar"
     autoDeploy: true
+    envVars:
+      - key: JAVA_HOME
+        value: /opt/render/project/.java

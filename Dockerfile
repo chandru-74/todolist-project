@@ -1,10 +1,10 @@
-# Use official Maven + JDK image for build stage
-FROM maven:3.8.6-eclipse-temurin-17 as build
+# Use Maven + JDK to build the app
+FROM maven:3.8.6-eclipse-temurin-17 AS build
 WORKDIR /app
 COPY . .
-RUN ./mvnw clean package -DskipTests
+RUN mvn clean package -DskipTests
 
-# Use lightweight JDK image for runtime
+# Use lightweight JDK image for running the app
 FROM eclipse-temurin:17-jdk-jammy
 WORKDIR /app
 COPY --from=build /app/target/*.jar app.jar

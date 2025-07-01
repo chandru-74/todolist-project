@@ -1,8 +1,0 @@
-services:
-  - type: web
-    name: todolist-app
-    plan: free
-    branch: main
-    buildCommand: "./mvnw clean install"
-    startCommand: "java -jar target/*.jar"
-    autoDeploy: true
